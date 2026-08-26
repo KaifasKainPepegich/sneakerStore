@@ -1,6 +1,12 @@
 .page {
   min-height: 100vh;
-  padding: 24px;
   background-color: #f4f1e9;
   color: #171717;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 24px;
 }
