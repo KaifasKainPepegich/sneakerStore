@@ -1,4 +1,4 @@
-.hero {
+.sneakerBanner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 0.7fr);
   min-height: 360px;
@@ -8,12 +8,12 @@
   color: #171717;
 }
 
-.copy {
+.bannerText {
   align-self: center;
   padding: 48px;
 }
 
-.eyebrow {
+.collectionLabel {
   margin: 0 0 16px;
   font-size: 13px;
   font-weight: 600;
@@ -21,7 +21,7 @@
   text-transform: uppercase;
 }
 
-.title {
+.bannerTitle {
   max-width: 600px;
   margin: 0 0 20px;
   font-size: clamp(42px, 6vw, 72px);
@@ -29,7 +29,7 @@
   letter-spacing: -4px;
 }
 
-.description {
+.sneakerDescription {
   max-width: 440px;
   margin: 0 0 28px;
   color: #3e422d;
@@ -37,7 +37,7 @@
   line-height: 1.5;
 }
 
-.button {
+.catalogLink {
   display: inline-flex;
   align-items: center;
   min-height: 46px;
@@ -62,14 +62,14 @@
   outline-offset: 3px;
 }
 
-.visual {
+.sneakerImageContainer {
   display: grid;
   place-items: center;
   min-width: 0;
   padding: 24px;
 }
 
-.image {
+.sneakerImage {
   display: block;
   width: 125%;
   max-width: 760px;
@@ -79,25 +79,25 @@
 }
 
 @media (max-width: 700px) {
-  .hero {
+  .sneakerBanner {
     grid-template-columns: 1fr;
   }
 
-  .copy {
+  .bannerText {
     padding: 32px 24px;
   }
 
-  .title {
+  .bannerTitle {
     font-size: 44px;
     letter-spacing: -2px;
   }
 
-  .visual {
+  .sneakerImageContainer {
     min-height: 220px;
     padding: 0 24px 24px;
   }
 
-  .image {
+  .sneakerImage {
     width: 100%;
     max-width: 480px;
     transform: rotate(-5deg);

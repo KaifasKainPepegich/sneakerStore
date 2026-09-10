@@ -1,24 +1,23 @@
-import styles from './Header.module.css'
+import { Link, NavLink } from 'react-router-dom';
+import styles from './styles.module.scss';
 
-function Header() {
+export const Header = () => {
   return (
     <header className={styles.header}>
-      <a className={styles.logo} href='/'>
+      <Link className={styles.storeLogo} to='/'>
         ПАДОШВА
-      </a>
+      </Link>
 
-      <nav className={styles.navigation} aria-label='Основная навигация'>
-        <a href='#catalog'>Каталог</a>
-        <a href='#new'>Новинки</a>
-        <a href='#sale'>Скидки</a>
+      <nav className={styles.catalogNavigation} aria-label='Основная навигация'>
+        <NavLink to='#catalog'>Каталог</NavLink>
+        <NavLink to='#new'>Новинки</NavLink>
+        <NavLink to='#sale'>Скидки</NavLink>
       </nav>
 
-      <button className={styles.cart} type='button'>
+      <button className={styles.cartLink} type='button'>
         Корзина
-        <span className={styles.cartCount}>0</span>
+        <span className={styles.cartItemCount}>0</span>
       </button>
     </header>
-  )
-}
-
-export default Header
+  );
+};

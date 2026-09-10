@@ -1,16 +1,17 @@
-import styles from './App.module.css'
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
+import { Routes, Route } from 'react-router-dom';
+import styles from './App.module.scss';
+import { Header } from './components/Header/Header';
+import { HomePage } from './pages/HomePage/HomePage';
 
-function App() {
+export const App = () => {
   return (
     <div className={styles.page}>
       <Header />
       <main className={styles.content}>
-        <Hero />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+        </Routes>
       </main>
     </div>
-  )
-}
-
-export default App
+  );
+};

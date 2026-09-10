@@ -8,7 +8,7 @@
   padding: 20px 24px;
 }
 
-.logo {
+.storeLogo {
   color: #171717;
   font-size: 22px;
   font-weight: 800;
@@ -16,7 +16,7 @@
   letter-spacing: -1px;
 }
 
-.navigation {
+.catalogNavigation {
   display: flex;
   gap: 24px;
   margin-left: auto;
@@ -32,7 +32,7 @@
   color: #171717;
 }
 
-.cart {
+.cartLink {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 
-.cartCount {
+.cartItemCount {
   display: grid;
   place-items: center;
   width: 22px;
@@ -60,11 +60,11 @@
     gap: 16px;
   }
 
-  .navigation {
+  .catalogNavigation {
     display: none;
   }
 
-  .cart {
+  .cartLink {
     margin-left: auto;
   }
 }

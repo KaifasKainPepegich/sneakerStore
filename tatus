@@ -1,0 +1,21 @@
+ .gitignore                                         |   3 [32m+[m[31m-[m
+ .prettierignore                                    |  11 [32m+[m
+ .prettierrc.json                                   |  11 [32m+[m
+ .vscode/extensions.json                            |   3 [32m+[m
+ .vscode/settings.json                              |  46 [32m+++[m
+ eslint.config.js                                   |  35 [32m+[m[31m-[m
+ package.json                                       |   8 [32m+[m
+ .../images/sneaker-banner.webp                     | Bin
+ src/{App.module.css => App.module.scss}            |   0
+ src/App.tsx                                        |  19 [32m+[m[31m-[m
+ src/components/Header/Header.tsx                   |  27 [32m+[m[31m-[m
+ .../{Header.module.css => styles.module.scss}      |  12 [32m+[m[31m-[m
+ src/components/Hero/Hero.tsx                       |  26 [31m--[m
+ src/components/SneakerBanner/SneakerBanner.tsx     |  23 [32m++[m
+ .../styles.module.scss}                            |  26 [32m+[m[31m-[m
+ src/{index.css => index.scss}                      |   0
+ src/main.tsx                                       |  17 [32m+[m[31m-[m
+ src/pages/HomePage/HomePage.tsx                    |   5 [32m+[m
+ src/pages/HomePage/styles.module.scss              |   0
+ yarn.lock                                          | 398 [32m++++++++++++++++++++[m[31m-[m
+ 20 files changed, 585 insertions(+), 85 deletions(-)
